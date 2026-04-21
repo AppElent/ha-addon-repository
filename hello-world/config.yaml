@@ -11,14 +11,4 @@ boot: auto
 options:
   log_level: info
 schema:
-  log_level:
-    selector:
-      options:
-        - emerg
-        - alert
-        - crit
-        - err
-        - warning
-        - notice
-        - info
-        - debug
+  log_level: list(emerg|alert|debug|info|notice|warning|error)?
