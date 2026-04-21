@@ -1,15 +1,15 @@
 # Hello World Add-on
 
-A simple demo add-on that runs the [crccheck/hello-world](https://hub.docker.com/r/crccheck/hello-world) image to verify your Home Assistant add-on repository setup.
+A simple demo add-on that runs the official Docker `hello-world` image to verify your Home Assistant add-on repository setup.
 
 ## About
 
-This add-on uses the [crccheck/hello-world](https://hub.docker.com/r/crccheck/hello-world) image, a minimal HTTP server that responds with "Hello World!" to any request. When started, it listens on port 8000 and stays running as long as the add-on is active.
+This add-on uses the [official Docker hello-world image](https://hub.docker.com/_/hello-world), the smallest possible Docker image (~13 KB). When started, it runs the `/hello` binary, which prints a short confirmation message to the logs, then exits.
 
 It is intended as a smoke-test to confirm that:
 - The add-on repository is correctly configured in Home Assistant
-- Home Assistant can build and run add-on images
-- The add-on infrastructure (supervisor, image build, log output) is working
+- Home Assistant can pull images from Docker Hub
+- The add-on infrastructure (supervisor, image pull, log output) is working
 
 ## Installation
 
@@ -21,7 +21,7 @@ It is intended as a smoke-test to confirm that:
 
 ## Usage
 
-The add-on starts an HTTP server that responds with "Hello World!" to any request. It will keep running until you stop it.
+Because the `hello-world` binary prints its message and exits immediately, the add-on will start, produce output, and then stop. This is expected behaviour.
 
 To see the output:
 
@@ -32,7 +32,9 @@ To see the output:
 You should see output similar to:
 
 ```
-Serving on http://0.0.0.0:8000
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+...
 ```
 
 ## Configuration
@@ -48,5 +50,5 @@ This add-on has no configurable options.
 
 For issues with this add-on:
 1. Check the add-on logs as described above
-2. Consult the [crccheck/hello-world image page](https://hub.docker.com/r/crccheck/hello-world)
+2. Consult the [Docker hello-world image page](https://hub.docker.com/_/hello-world)
 3. Ask on [Home Assistant Community](https://community.home-assistant.io/)
