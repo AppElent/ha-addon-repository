@@ -1,0 +1,26 @@
+#!/usr/bin/env bashio
+# Startup script for your add-on
+# This script runs when the add-on starts
+
+# Example: Get configuration values
+# CONFIG_VALUE=$(bashio::config 'your_option_name')
+
+# Example: Log messages
+# bashio::log.info "Starting your application..."
+# bashio::log.warning "Warning message"
+# bashio::log.error "Error message"
+
+# Start your application
+# For simple containers, just exec the main process
+# For complex applications, you may need multiple commands
+
+# Example 1: Simple exec (replace with your app)
+# exec /path/to/your/application
+
+# Example 2: Using environment variables
+# export MY_VAR=$(bashio::config 'my_option')
+# exec /path/to/your/application --config /config
+
+# Example 3: Background service with logging
+# /path/to/your/application &
+# wait

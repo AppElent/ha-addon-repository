@@ -1,0 +1,23 @@
+name: Hello World
+version: "1.0.0"
+slug: hello-world
+description: A simple hello world demo app to test the repository setup
+url: https://github.com/ealen/echo-server
+image: ealen/echo-server:latest
+ports:
+  8080/tcp: null
+startup: application
+boot: auto
+options:
+  log_level: info
+schema:
+  log_level: selector
+    options:
+      - emerg
+      - alert
+      - crit
+      - err
+      - warning
+      - notice
+      - info
+      - debug

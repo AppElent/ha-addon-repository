@@ -1,0 +1,73 @@
+# [Your App Name] Add-on
+
+Brief description of what this add-on does.
+
+## About
+
+Longer description explaining the purpose and features of this application. Include relevant links to the original project or documentation.
+
+## Installation
+
+1. Add the repository to your Home Assistant installation (if not already added)
+2. Go to the Add-on Store
+3. Find "[Your App Name]"
+4. Click Install
+5. (Optional) Configure the add-on by clicking Configuration
+6. Click Start
+7. (Optional) Enable "Start on boot" if you want it to run automatically
+
+## Configuration
+
+Describe the available configuration options:
+
+### Example Option
+
+Description of the option and how to use it.
+
+```yaml
+option_name: value
+```
+
+## Usage
+
+Explain how to use the add-on once it's running:
+
+- How to access it (URL, port, etc.)
+- Basic commands or features
+- Common workflows
+
+### Example
+
+```bash
+# Example command or usage
+curl http://your-ha-ip:8080/api/endpoint
+```
+
+## Advanced Configuration
+
+(Optional) Add-on specific advanced settings or environment variables.
+
+## Logs
+
+View logs in Home Assistant:
+1. Settings → Add-ons & Services
+2. Click your add-on
+3. Click the "Logs" tab
+
+## Troubleshooting
+
+Common issues and solutions:
+
+- **Issue**: Description
+  **Solution**: How to fix it
+
+## Support
+
+For issues:
+1. Check the add-on logs
+2. Consult the [original project documentation](https://github.com/project-link)
+3. Ask on [Home Assistant Community](https://community.home-assistant.io/)
+
+## License
+
+See the LICENSE file in the repository.

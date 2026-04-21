@@ -1,0 +1,117 @@
+# Home Assistant Add-on Configuration Template
+# This is a template for creating new add-ons
+# Remove comments and adjust values as needed for your application
+
+name: My Awesome Application
+version: "1.0.0"
+slug: my-awesome-app
+description: A brief description of what this application does
+
+# Link to the source code or documentation
+url: https://github.com/yourorg/your-app
+
+# Docker image to run (REQUIRED)
+# Examples:
+#   ghcr.io/yourorg/my-app:latest
+#   docker.io/library/nginx:latest
+#   ealen/echo-server:latest
+image: ghcr.io/yourorg/my-app:latest
+
+# Supported architectures (optional, defaults to all)
+# arch:
+#   - amd64
+#   - aarch64
+#   - armv7
+#   - i386
+
+# Port mappings (optional)
+# Format: "internal_port/protocol" or "internal_port:external_port/protocol"
+# ports:
+#   8080/tcp: null      # Maps port 8080, auto-select external port
+#   8080:8080/tcp: null # Maps port 8080 to external port 8080
+#   3000/udp: null      # UDP port example
+
+# Port descriptions for the UI (optional)
+# ports_description:
+#   8080/tcp: "Web Interface"
+
+# Volume mappings (optional)
+# Common mappings:
+#   config:rw  - Home Assistant /config directory (read-write)
+#   share:rw   - Home Assistant /share directory
+#   backup:ro  - Home Assistant backups (read-only)
+# map:
+#   - config:rw
+#   - share:rw
+
+# Startup mode (optional, default: "application")
+# - "application": Foreground application
+# - "service": Background service
+# - "once": Run once and stop
+# startup: application
+
+# When to start the add-on (optional, default: "auto")
+# - "auto": Start automatically
+# - "manual": Only start when user clicks start
+# boot: auto
+
+# Network mode (optional)
+# - "host": Access to host network
+# - "bridge": Isolated network (default)
+# network: bridge
+
+# Privileged container (optional, default: false)
+# Only use if absolutely necessary
+# privileged: false
+
+# Full filesystem access (optional, default: false)
+# Only use if absolutely necessary
+# full_access: false
+
+# Environment variables (optional)
+# environment:
+#   MY_VAR: "default_value"
+#   DEBUG: "false"
+
+# Configuration options that users can customize (optional)
+# options:
+#   log_level: info
+#   debug: false
+#   port: 8080
+
+# Schema for configuration validation (optional)
+# Defines the type and constraints for each option
+# schema:
+#   log_level: selector
+#     options:
+#       - debug
+#       - info
+#       - warning
+#       - error
+#   debug: bool
+#   port:
+#     type: int
+#     minimum: 1024
+#     maximum: 65535
+
+# Services this add-on depends on (optional)
+# waits_for:
+#   - mqtt
+
+# Services that should start before this one (optional)
+# services:
+#   - service: mqtt
+#     action: start
+
+# Devices to mount (optional)
+# devices:
+#   - /dev/ttyUSB0:/dev/ttyUSB0:rwm
+
+# Logging
+# logging: structured
+
+# Host network access (optional)
+# host_network: false
+
+# Init system (optional)
+# init: false
