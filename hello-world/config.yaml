@@ -4,6 +4,9 @@ slug: hello-world
 description: A simple hello world demo app to test the repository setup
 url: https://github.com/ealen/echo-server
 image: ealen/echo-server
+arch:
+- aarch64
+- amd64
 ports:
   8080/tcp: null
 startup: application
