@@ -1,9 +1,6 @@
 #!/usr/bin/env bashio
 
-# Get configuration
-LOG_LEVEL=$(bashio::config 'log_level')
+bashio::log.info "Hello World add-on starting..."
+bashio::log.info "The /hello binary will print a message and the container will exit."
 
-# Run the echo server
-bashio::log.info "Starting Echo Server on port 8080..."
-
-exec /echo-server
+exec /hello
