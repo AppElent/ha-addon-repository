@@ -2,7 +2,8 @@ name: Hello World
 version: "1.0.0"
 slug: hello-world
 description: A simple hello world demo app to test the repository setup
-url: https://hub.docker.com/_/hello-world
+url: https://hub.docker.com/r/crccheck/hello-world
+image: crccheck/hello-world
 arch:
 - aarch64
 - amd64
